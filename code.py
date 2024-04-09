@@ -12,7 +12,6 @@ dataset = pd.read_csv('boston.csv', skiprows=1,names=names)
 dataset = dataset.iloc[1:]
 
 def k_fold (dataset,k):
-    
     results = []
     models = []
     subsets = np.array_split(dataset, k)
@@ -96,7 +95,7 @@ plt.show()
     
 r_square = r2_score(testing_data['MEDV'],predict)
 print('k-fold :',r_square)
-s
+
 
 model = training(training_data)
 
